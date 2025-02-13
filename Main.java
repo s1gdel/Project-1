@@ -20,29 +20,25 @@ public class Main{
 
             if (choice == 1) {
                 //do something
-            }
-            else if (choice == 2) {
+            } else if (choice == 2) {
                 //do something
-            }
-            else if (choice == 3) {
+            } else if (choice == 3) {
                 // do something
-            }
-            else if (choice == 4) {
+            } else if (choice == 4) {
                 // do something
-            }
-            else if (choice == 5) {
+            } else if (choice == 5) {
                 // do something
-            }
-            else if (choice == 6) {
+            } else if (choice == 6) {
                 // do something
-            }
-            else if (choice == 7) {
+            } else if (choice == 7) {
                 // do something
-            }
-            else {
+            } else {
                 System.out.println("Please enter valid chocie!");
             }
 
         }
+        
+        scanner.close();
+        ;
     }
 }

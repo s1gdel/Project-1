@@ -17,12 +17,16 @@ public class Product implements IDedObject {
         this.productID = productID;
     }
 
+    @Override
     public int getID() {
         return productID;
     }
 
+    @Override
     public void printID() {
         System.out.println(productID);
+        System.out.println(productName);
+        System.out.println(supplierName);
     }
 
 }
