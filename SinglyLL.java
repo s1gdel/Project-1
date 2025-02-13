@@ -1,10 +1,8 @@
-public class SinglyLL<AnyType> implements IDedObject {
+public class SinglyLL<AnyType extends IDedObject>  {
     private Node<AnyType> head;
-    private Product product;
-
+ 
     public SinglyLL() {
         this.head = null;
-        this.product = new Product();
     }
 
 
@@ -49,14 +47,5 @@ public class SinglyLL<AnyType> implements IDedObject {
         }
     }
 
-
-    @Override
-    public int getID() {
-        return product.getID();
-    }
-   @Override
-    public void printID() {
-        product.printID();
-    }
   
 }
