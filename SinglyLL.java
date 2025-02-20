@@ -10,7 +10,7 @@ public class SinglyLL<AnyType extends IDedObject>  {
         if(head !=null){
             head = null;
         }else{
-            System.out.println("Linked list is empty");
+            System.out.println("Linked list is already empty");
         }
     }
 
@@ -24,21 +24,27 @@ public class SinglyLL<AnyType extends IDedObject>  {
         }
         current = current.getNextNode();
        }
+       System.out.println("No ID found");
        return null;
     }
 
-    /*public boolean insertAtFront(AnyType x) {
+    public boolean insertAtFront(AnyType x) {
 
-        if(){
-            //call id finds id return false w/msg id has already been found
+        Node <AnyType> current = head;
+        while(current != null){
+            if(current.getData().getID() == x.getID()){
+                System.out.println("Record already exists");
+                return false;
+            }
+            current = current.getNextNode();
         }
-        else{
+
             Node <AnyType> newNode = new Node <AnyType>(x);
             newNode.setNextNode(head);
             head=newNode;
+            System.out.println("Sucessfully inserted at front");
             return true;
         }
-    }*/
 
     public AnyType deleteFromFront() {
         if(head==null){
@@ -82,10 +88,10 @@ public class SinglyLL<AnyType extends IDedObject>  {
         else{
             Node<AnyType> current = head;
             while(current != null){
-                System.out.print(current.getData() + "->");
+                current.getData().printID();
+                System.out.println();
                 current = current.getNextNode();
             }
-            System.out.print("NULL");
         }
     }
 
