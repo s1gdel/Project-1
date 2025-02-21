@@ -72,6 +72,6 @@ public class Main {
             }
         }
 
-        scanner.close(); // Closing Scanner test
+        scanner.close(); // Closing Scanner
     }
 }
